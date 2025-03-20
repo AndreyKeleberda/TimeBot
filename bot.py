@@ -8,7 +8,7 @@ TOKEN = "7556880415:AAEK3n9nGp0zTpc0CAzJHf1KJ3CWpr7hZf8"  # Заміни на с
 
 # Підключення до Google Sheets
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("timebot-454309-ce7003c16213.json", scope)  # Заміни на свій JSON-файл
+creds = ServiceAccountCredentials.from_json_keyfile_name("timebot-454309-eb2cf6bb08b1.json", scope)  # Заміни на свій JSON-файл
 client = gspread.authorize(creds)
 sheet = client.open("Tasks").sheet1
 
